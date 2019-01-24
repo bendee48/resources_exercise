@@ -1,0 +1,6 @@
+<h3>Current Members</h3>
+<ul>
+  <% @members.each do |name| %>
+  <li><a href="/members/<%= name %>"><%= name %></a></li>
+  <% end %>
+</ul>
