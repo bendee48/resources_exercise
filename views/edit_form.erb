@@ -1,0 +1,8 @@
+<h3>Edit name</h3>
+<h6><%= @message %></h6>
+<form action="/members/<%= @name %>" method="post">
+  <input type="hidden" name="_method" value="put">
+  <input type="text" name="new_name">
+  <input type="submit">
+</form>
+<a href="/members">Back</a>
